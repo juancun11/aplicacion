@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+
+<div class="container fondo">
+	<div class="row info ajuste">
+		<div class="col text-center">
+			<h1>NOMBRE DE USUARIO</h1>
+			<input type="text" name="" placeholder="U S U A R I O" class="input text-center">
+		</div>
+	</div>
+
+	<div class="row info ajuste mail">
+		<div class="col text-center">
+			<h1>CORREO ELECTRONICO</h1>
+			<input type="email" name="" placeholder="E M A I L" class="input text-center" ng-model="user.email">
+		</div>
+	</div>
+
+	<div class="row info ajuste mail">
+		<div class="col text-center">
+			<h1>CONTRASEÑA</h1>
+			<input type="password" name="" placeholder="C O N T R A S E Ñ A" class="input text-center" ng-model="user.contra">
+		</div>
+	</div>
+
+	<div class="row centrado">
+		<div class="col">
+			<div class="boton" ng-click="obtener(user)"><span>GO</span></div>
+		</div>
+	</div>
+
+	<div class="row centrado">
+		<div class="col">
+			<span class="log" ui-sref="login">I N G R E S A R</span>
+		</div>
+	</div>
+
+</div>
