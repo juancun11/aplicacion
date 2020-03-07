@@ -41,7 +41,35 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('DashCtrl', function($scope) {})
+.controller('DashCtrl', function($scope,$rootScope) {
+  $rootScope.Categorias = [
+  {
+    nombreCategoria : "TV Y VIDEO",
+    imagen : "img/tv.jpg"
+  },
+  {
+    nombreCategoria : "CELULARES",
+    imagen : "img/cel.jpg"
+  },
+  {
+    nombreCategoria : "LINEA BLANCA",
+    imagen : "img/refri.jpg"
+  },
+  {
+    nombreCategoria : "VIDEOJUEGOS",
+    imagen : "img/game.jpg"
+  },
+  {
+    nombreCategoria : "COMPUTACION",
+    imagen : "img/pc.jpg"
+  },
+  {
+    nombreCategoria : "AUDIO",
+    imagen : "img/aud.jpg"
+  }
+  
+  ]
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
