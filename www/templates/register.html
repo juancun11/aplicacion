@@ -1,37 +1,51 @@
 <link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
 
 <div class="container fondo">
-	<div class="row info ajuste">
-		<div class="col text-center">
-			<h1>NOMBRE DE USUARIO</h1>
-			<input type="text" name="" placeholder="U S U A R I O" class="input text-center">
+
+	<div class="row">
+		<div class="col titulo letra text-center">
+			<span>Regístrate</span>
 		</div>
 	</div>
 
-	<div class="row info ajuste mail">
+	<div class="row info letra">
 		<div class="col text-center">
-			<h1>CORREO ELECTRONICO</h1>
-			<input type="email" name="" placeholder="E M A I L" class="input text-center" ng-model="user.email">
+			<span>USUARIO</span>
+			<input type="text" name="" placeholder="......." class="input text-center">
 		</div>
 	</div>
 
-	<div class="row info ajuste mail">
+	<div class="row info letra mail">
 		<div class="col text-center">
-			<h1>CONTRASEÑA</h1>
-			<input type="password" name="" placeholder="C O N T R A S E Ñ A" class="input text-center" ng-model="user.contra">
+			<span>CORREO</span>
+			<input type="email" name="" placeholder="......." class="input text-center" ng-model="user.email">
+		</div>
+	</div>
+
+	<div class="row info letra mail">
+		<div class="col text-center">
+			<span>CONTRASEÑA</span>
+			<input type="password" name="" placeholder="......." class="input text-center" ng-model="user.contra">
+		</div>
+	</div>
+
+	<div class="row info letra mail">
+		<div class="col text-center">
+			<span>CONFIRMAR CONTRASEÑA</span>
+			<input type="password" name="" placeholder="......." class="input text-center" ng-model="confir.contra">
 		</div>
 	</div>
 
 	<div class="row centrado">
-		<div class="col">
-			<div class="boton" ng-click="obtener(user)"><span>GO</span></div>
+		<div class="col centrado">
+			<div class="boton letra" ng-click="obtener(user)"><span>Continuar</span></div>
 		</div>
 	</div>
 
-	<div class="row centrado">
+	<div class="row espacio">
 		<div class="col">
-			<span class="log" ui-sref="login">I N G R E S A R</span>
+			<span class="log" ui-sref="login">¿Ya tienes una cuenta? &nbsp <b>Iniciar</b> </span>
 		</div>
 	</div>
 

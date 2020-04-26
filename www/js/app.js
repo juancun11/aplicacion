@@ -35,6 +35,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
+  //vista Tutorial
+
+  .state("tutorial",{
+    url:"/tutorial",
+    templateUrl:"templates/tutorial.html",
+    controller:"tutorialCtrl"
+  })
+
   .state("registro",{
     url:"/registro",
     templateUrl:"templates/register.html",
@@ -45,7 +53,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   .state("login",{
     url: "/login",
-    templateUrl: "templates/inicio.html",
+    templateUrl: "templates/login.html",
     controller:"loginCtrl"
   })
 
@@ -98,6 +106,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('tab/dash');
+  $urlRouterProvider.otherwise('/tutorial');
 
 });

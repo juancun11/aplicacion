@@ -41,6 +41,12 @@ angular.module('starter.controllers', [])
 
 })
 
+//vista principal
+
+.controller("tutorialCtrl",function($scope){
+
+})
+
 .controller('DashCtrl', function($scope,$rootScope) {
   $rootScope.Categorias = [
   {
@@ -53,7 +59,7 @@ angular.module('starter.controllers', [])
   },
   {
     nombreCategoria : "LINEA BLANCA",
-    imagen : "img/refri.jpg"
+    imagen : "img/refril.jpg"
   },
   {
     nombreCategoria : "VIDEOJUEGOS",
