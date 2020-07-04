@@ -14,119 +14,178 @@
 	background-color: rgba(0,0,0,0.5);
 }
 .titulo {
-  padding-bottom: 10%;
-  font-size: 20px;
-  position: relative;
+	padding-bottom: 10%;
+	font-size: 20px;
+	position: relative;
 }
 .container {
-  padding-top: 27%;
+	padding-top: 27%;
 }
 .info span{
 	position: relative;
-  font-size: 15px;
+	font-size: 15px;
 }
 .input {
-  font-family: 'Manrope', sans-serif;
-  font-size: 18px;
-  width: 100%;
-  border: 0;
-  border-bottom: 1px solid gray !important;
-  outline: none;
-  font-size: 20px !important;
-  color: #ffff !important;
-  background: transparent;
-  position: relative !important;
-  }
-  .mail {
-  	padding-top: 5% !important;
-  }
-  .boton {
-    font-size: 16px;
-    font-weight: bolder;
-  	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	border-radius: 16px;
-  	position: relative;
-  	background-color: #eb4559;
-  	width: 230px;
-  	height: 36px;
-  	margin-top: 12%;
-  }
-  .centrado {
-  	display: flex !important;
-  	align-items: center !important;
-  	justify-content: center !important;
-  }
-  .log {
-    color: gray;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .log b{
-    color: #ffff;
-  }
+	font-family: 'Manrope', sans-serif;
+	font-size: 18px;
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid gray !important;
+	outline: none;
+	font-size: 20px !important;
+	color: #ffff !important;
+	background: transparent;
+	position: relative !important;
+	}
+	.mail {
+		padding-top: 5% !important;
+	}
+	.boton {
+		font-size: 16px;
+		font-weight: bolder;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 16px;
+		position: relative;
+		background-color: #eb4559;
+		width: 230px;
+		height: 36px;
+		margin-top: 12%;
+	}
+	.centrado {
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+	.log {
+		color: gray;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.log b{
+		color: #ffff;
+	}
 .letra span{
-  color: #ffff !important;
-  font-family: 'Manrope', sans-serif;
+	color: #ffff !important;
+	font-family: 'Manrope', sans-serif;
 }
 
 /* Vista Login */
 .logo {
-  position: relative;
-  width: 250px;
-  height: 125px;
+	position: relative;
+	width: 250px;
+	height: 125px;
 }
 .ajuste {
-  padding-top: 10%;
+	padding-top: 10%;
 }
 
-/* Vista Principal */
+/* Vista Principal tutorial*/
 .fondotuto {
-  background: url("../img/principal.jpg")center no-repeat;
-  background-size: cover;
-  height: 100%;
+	background: url("../img/principal.jpg")center no-repeat;
+	background-size: cover;
+	height: 100%;
+	font-family: 'Manrope', sans-serif;
 }
-.cuadro {
-  position: absolute;
-  top: 500px;
-  z-index: 4;
-  width: 100%;
-  height: 100%;
-  background-color: #ffff;
+.tutorial {
+	background-color: #FFFF;
+	margin-top: 500px;
 }
-.cuadro h4{
-  font-family: 'Manrope', sans-serif;
-  font-weight: bolder;
-  color: black;
-  padding-top: 6%;
+.tutorial h3{
+	color: #E4E4E4;
 }
-.circulos {
-  width: 15px;
-  height: 15px;
-  background-color: red;
-  border-radius: 50%;
-  z-index: 4;
-  position: absolute;
-  text-align: center;
+.tutorial h1{
+	font-size: 20px;
 }
-.c2 {
-  margin-left: 10%;
-  background-color: #ffff !important;
-  border: 1px solid gray;
+/* tab dash  categorias o principal tiendas max*/
+* {
+	font-family: 'Montserrat', sans-serif;
 }
-.c3 {
-  margin-left: 20%;
-  border: 1px solid gray;
-  background-color: #ffff;
+.title {
+	font-family: 'Montserrat', sans-serif !important;
+	color: #FFFF !important;
+	font-weight: bolder !important;
 }
-.circle {
-  margin-left: 36%;
+.principal {
+	background-color: #E7505E !important;
 }
-h3 {
-  color: #E6E6E6;
-  margin-left: 80%;
-  padding-top: 4.5%;
+.contenedor {
+	background-color: #E1E1E1;
+	border-radius: 5px;
+	padding: 0;
+	height: 85px;
+}
+.espacio {
+	padding-bottom: 6%;
+}
+.sinEs {
+	padding: 0;
+}
+.centrado {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.alto {
+	height: 85px;
+}
+.ajustedesc {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 10px;
+}
+.titulos {
+	font-weight: bolder;
+	padding-bottom: 0;
+}
+.iconorig {
+	font-size: 34px;
+	color: #9D9D9D;
+	cursor: pointer;
+}
+.espaciado {
+	padding-top: 0px;
+}
+.espaciadop {
+	padding-top: 60px;
+}
+/* vista por categorias */
+.contend {
+	background-color: #FFFF;
+	border-radius: 5px;
+	padding: 0;
+	height: 100%;
+	margin-bottom: 10%;
+	border-bottom: 10%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.line {
+	border-top: 0.5px solid black;
+}
+.Iconos{
+	color: black;
+	font-size: 22px;
+}
+.p {
+	margin-top: 80%;
+}
+.ajusteproducto {
+	padding: 12px;
+}
+.carouselajuste img{
+	width: 100%;
+	height: 225px !important;
+}
+.imgproduct img{
+	width: 100%;
+	height: 100%;
+}
+.carouselajuste h1{
+	color: #FFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
 }

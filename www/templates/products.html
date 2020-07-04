@@ -1,0 +1,72 @@
+<!-- Vista donde se muestran los productos ya filtrados -->
+<link rel="stylesheet" href="css/style2.css">
+<div class="container espaciadop ajusteproducto">
+	<div class="row">
+		<div class="col carouselajuste">
+			<ion-content scroll="false">
+			  <ion-slides  options="options" slider="data.slider">
+			    <ion-slide-page class="carouselajuste">
+			      <div class="box blue"><img src="img/principal.jpg" height="225px"></div>
+			    </ion-slide-page>
+			    <ion-slide-page class="carouselajuste">
+			      <div class="box yellow"><img src="img/c2.jpg" height="225px"></div>
+			    </ion-slide-page>
+			    <ion-slide-page class="carouselajuste">
+			      <div class="box pink"><img src="img/c3.jpg" height="225px"></div>
+			    </ion-slide-page>
+			  </ion-slides>
+			</ion-content>
+		</div>
+	</div>
+
+	<script>
+		$scope.options = {
+		  loop: false,
+		  effect: 'fade',
+		  speed: 500,
+		}
+
+		$scope.$on("$ionicSlides.sliderInitialized", function(event, data){
+		  // data.slider is the instance of Swiper
+		  $scope.slider = data.slider;
+		});
+
+		$scope.$on("$ionicSlides.slideChangeStart", function(event, data){
+		  console.log('Slide change is beginning');
+		});
+
+		$scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
+		  // note: the indexes are 0-based
+		  $scope.activeIndex = data.slider.activeIndex;
+		  $scope.previousIndex = data.slider.previousIndex;
+		});
+
+	</script>
+
+
+	<div class="row contend ajusteproducto p" ng-repeat="x in lista | filter: nombreCategoria">
+		<div class="col centrado imgproduct">
+			<div>
+				<img src="{{x.imagen}}">
+				<p><span>Precio: Q.{{x.precio}}</span></p>
+			</div>
+		</div>
+		<div class="col col-60">
+			<p>{{x.nombre}}</p>
+			<p><span style="font-weight: bolder;">Descripcion:</span> {{x.descripcion}}</p>
+			<p class="centrado">
+				<div class="row centrado Iconos line">
+					<div class="col centrado">
+						<i class="fas fa-heart"></i>
+					</div>
+					<div class="col centrado">
+						<i class="fas fa-cart-arrow-down"></i>
+					</div>
+					<div class="col centrado">
+						<i class="fas fa-share-alt"></i>
+					</div>
+				</div>
+			</p>
+		</div>
+	</div>
+</div>
